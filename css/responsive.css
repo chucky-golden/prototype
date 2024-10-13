@@ -1,7 +1,9 @@
 /* phone */
 @media(max-width: 786px) {
     body {
-        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/field3.jpg');
+        height: 100vh;
+        background-size: cover;
+        animation: fade 10s infinite;
     }
     nav .logo img {
         width: 50px;
@@ -89,6 +91,58 @@
     
     footer {
         display: flex;
+    }
+
+    /* index */
+    .accounts h1 {
+        font-size: 20px;
+        margin-top: 20%;
+    }
+    
+    .accounts p,
+    .accounts .one p {
+        font-size: 15px;
+        color: rgb(14, 240, 14) !important;
+
+    }
+    
+    .accounts .login .two,
+    .accounts .register .two {
+        background: transparent;
+        border: 1px dotted green;
+        width: 90%;
+    }
+
+    .accounts label {
+        font-size: 15px;
+    }
+
+    .accounts .login .two button,
+    .accounts .register .two button {
+        padding: 10px;
+        animation: changeColor 3s ease-in-out infinite;
+    }
+
+    @keyframes changeColor {
+        0%, 100%{
+            background-color: green;
+            color: white;
+        }40%, 60%{
+            background-color: rgb(14, 240, 14);
+            color: black;
+        }20%, 90%{
+            background-color: rgb(90, 227, 21);
+            color: black;
+        }
+    }
+
+    .accounts .login .suggest p,
+    .accounts .register .suggest p {
+        font-size: 14px;
+    }
+    .category div button{
+        width: 90%;
+        padding: 5px;
     }
 }
 
@@ -190,5 +244,23 @@
         padding: 5px 5px;
         margin-left: 1%;
         width: 97%;
+    }
+}
+
+@keyframes fade {
+    0% {
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/nature.jpeg');
+    }
+    40% {
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/life1.jpg');
+    }
+    70% {
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/field1.avif');
+    }
+    100% {
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/life.jpg');
+    }
+    130% {
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/field4.jpg');
     }
 }

@@ -10,398 +10,395 @@
 </head>
 
 <body>
-    <div id="main">
-        <!-- Navbar -->
-        <nav class="navbar">
-            <a class="navbar-logo" href="javascript:void(0)" onclick="movePage('sports')"><img src="img/trust.png" alt=""></a>
-            <a class="logout" href=""><span class="fa fa-power-off"></span></a>
-            <div class="menu-icon" id="menu-icon">&#9776;</div>
-        </nav>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="navbar-logo" href="javascript:void(0)" onclick="movePage('sports')"><img src="img/trust.png" alt=""></a>
+        <a class="logout" href=""><span class="fa fa-power-off"></span></a>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+    </nav>
 
-        <!-- Side Navigation (for mobile) -->
-        <div id="sideNav" class="side-nav">
-            <ul class="navbar-links2">
+    <!-- Side Navigation (for mobile) -->
+    <div id="sideNav" class="side-nav">
+        <ul class="navbar-links2">
+            <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('sports')">Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Play Ground</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Voting</a></li>
+        </ul>
+        <ul class="navbar-links2 second">
+            <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('lifestyle')">Switch App</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Logout</a></li>
+        </ul>
+        <span class="close-btn" id="close-btn">&times;</span>
+    </div>
+
+    <div class="hero">
+        <div id="bidSideNav" class="bigside-nav">
+            <ul class="bignavbar-links2">
                 <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('sports')">Dashboard</a></li>
                 <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Play Ground</a></li>
                 <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Voting</a></li>
             </ul>
-            <ul class="navbar-links2 second">
+            <ul class="bignavbar-links2 second">
                 <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('lifestyle')">Switch App</a></li>
                 <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Profile</a></li>
                 <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Logout</a></li>
             </ul>
-            <span class="close-btn" id="close-btn">&times;</span>
+            <p class="version">Banter Social App v.1.1</p>
         </div>
-
-        <div class="hero">
-            <div id="bidSideNav" class="bigside-nav">
-                <ul class="bignavbar-links2">
-                    <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('sports')">Dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Play Ground</a></li>
-                    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Voting</a></li>
-                </ul>
-                <ul class="bignavbar-links2 second">
-                    <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('lifestyle')">Switch App</a></li>
-                    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Profile</a></li>
-                    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Logout</a></li>
-                </ul>
-                <p class="version">Banter Social App v.1.1</p>
+        <div class="content">
+            <div class="one">
+                <p>Hi <span class="name">Chucky Cheese</span> 👋</p>
             </div>
-            <div class="content">
-                <div class="one">
-                    <p>Hi <span class="name">Chucky Cheese</span> 👋</p>
+            <div class="two">
+                <p>filter category</p>
+                <div class="twoinner">
+                    <button class="active" id="btn1">Top Featured</button>
+                    <button id="btn2">Club Team</button>
+                    <button id="btn3">International</button>
+                    <button id="btn4">National</button>
                 </div>
-                <div class="two">
-                    <p>filter category</p>
-                    <div class="twoinner">
-                        <button class="active" id="btn1">Top Featured</button>
-                        <button id="btn2">Club Team</button>
-                        <button id="btn3">International</button>
-                        <button id="btn4">National</button>
-                    </div>
+            </div>
+            <div class="three">
+                <div id="all">
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">UEFA Champions League....</p>
+                            </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">English Football....</p>
+                            </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">Spanish Football....</p>
+                            </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">UEFA Europa League....</p>
+                            </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">German Football....</p>
+                            </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">Other Leagues....</p>
+                            </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="three">
-                    <div id="all">
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">UEFA Champions League....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                <div id="club">
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">English Football....</p>
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">English Football....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">Spanish Football....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">Spanish Football....</p>
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">UEFA Europa League....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">German Football....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">Italian Football....</p>
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">Other Leagues....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
                             </div>
-                        </a>
-                    </div>
-                    <div id="club">
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">English Football....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">German Football....</p>
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">Spanish Football....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">Italian Football....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">French Football....</p>
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">German Football....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">French Football....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">Other Leagues....</p>
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">Other Leagues....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
                             </div>
-                        </a>
-                    </div>
-                    <div id="international">
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">UEFA Champions League....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="international">
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">UEFA Champions League....</p>
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">UEFA Europa League....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">UEFA Conference League....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">UEFA Europa League....</p>
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">UEFA Europa League....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">German Football....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">UEFA Conference League....</p>
                             </div>
-                        </a>
-                    </div>
-                    <div id="national">
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">FIFA World Cup....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">AFCON....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">UEFA Europa League....</p>
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">EUROS....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">Nations League....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">German Football....</p>
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">COPA America....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
                             </div>
-                        </a>
-                        <a href="">
-                            <div class="row ">
-                                <div class="r1">
-                                    <p class="tour">Olympics....</p>
-                                </div>
-                                <div class="r2">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                    <img src="img/img7.jpg" alt="">
-                                    <img src="img/img9.png" alt="">
-                                </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="national">
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">FIFA World Cup....</p>
                             </div>
-                        </a>
-                    </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">AFCON....</p>
+                            </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">EUROS....</p>
+                            </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">Nations League....</p>
+                            </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">COPA America....</p>
+                            </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="row ">
+                            <div class="r1">
+                                <p class="tour">Olympics....</p>
+                            </div>
+                            <div class="r2">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                                <img src="img/img7.jpg" alt="">
+                                <img src="img/img9.png" alt="">
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-        <footer>
-            <div>
-                <a href="javascript:void(0)" onclick="movePage('sports')" title="home">
-                    <span class="fa fa-home"></span>
-                </a>
-            </div>
-            <div>
-                <a href="javascript:void(0)" title="switch app">
-                    <span class="fa fa-history"></span>
-                </a>
-            </div>
-            <div>
-                <a href="javascript:void(0)" title="profile">
-                    <span class="fa fa-user"></span>
-                </a>
-            </div>
-            <div>
-                <a href="javascript:void(0)" title="subscription">
-                    <span class="fa fa-credit-card"></span>
-                </a>
-            </div>
-        </footer>
     </div>
-    <div id="load"></div>
+
+
+
+
+
+
+
+    <footer>
+        <div>
+            <a href="javascript:void(0)" onclick="movePage('sports')" title="home">
+                <span class="fa fa-home"></span>
+            </a>
+        </div>
+        <div>
+            <a href="javascript:void(0)" title="switch app">
+                <span class="fa fa-history"></span>
+            </a>
+        </div>
+        <div>
+            <a href="javascript:void(0)" title="profile">
+                <span class="fa fa-user"></span>
+            </a>
+        </div>
+        <div>
+            <a href="javascript:void(0)" title="subscription">
+                <span class="fa fa-credit-card"></span>
+            </a>
+        </div>
+    </footer>
 </body>
 <script src="js/all.js"></script>
 <script src="js/axios.js"></script>

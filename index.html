@@ -1,11 +1,111 @@
 <html lang="en">
+
+</html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Banter - Signin / Signup</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
-    <a href="sports.html">sports</a><br>
-    <a href="lifestyle.html">lifestyle</a>
+
+<body class="light-mode">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="navbar-logo" href="javascript:void(0)" onclick="movePage('index')"><img src="img/trust.png" alt=""></a>
+    </nav>
+
+    <div class="accounts">
+        <div class="login">
+            <div class="one">
+                <h1>User Login</h1>
+                <p>fill form below to sign into your account</p>
+            </div>
+            <div class="two">
+                <div class="form-group">
+                    <label for="">Email</label><br>
+                    <input type="text" name="" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="">Password</label><br>
+                    <div class="pwd">
+                        <input type="password" name="" id="password"><span id="show1"><span
+                                class="fa fa-eye"></span></span>
+                    </div>
+                </div>
+                <div class="form-group forgot">
+                    <a href="#" id="forgot">forgot password?</a>
+                </div>
+                <div class="form-group">
+                    <span id="msg1"></span>
+                </div>
+                <div class="form-group btn">
+                    <button id="submit1" onclick="movePage('sports')">Login Now</button>
+                </div>
+            </div>
+            <div class="suggest">
+                <p>No account yet? click <span class="s1">Here</span> to register</p>
+            </div>
+        </div>
+        <div class="register">
+            <div class="one">
+                <h1>User Register</h1>
+                <p>fill form below to apply for an account</p>
+            </div>
+            <div class="two">
+                <div class="form-group">
+                    <label for="">Username</label><br>
+                    <input type="text" name="" id="uname">
+                </div>
+                <div class="form-group">
+                    <label for="">Email</label><br>
+                    <input type="text" name="" id="remail">
+                </div>
+                <div class="form-group">
+                    <label for="">Password</label><br>
+                    <div class="pwd">
+                        <input type="password" name="" id="rpassword"><span id="show2"><span
+                                class="fa fa-eye"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <span id="msg2"></span>
+                </div>
+                <div class="form-group btn">
+                    <button id="submit2">Register Now</button>
+                </div>
+            </div>
+            <div class="suggest">
+                <p>already have an account? click <span class="s2">Here</span> to login</p>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="policy"><a href="javascript:void(0)">click to view privacy and policy page</a></p>
+
+
+    <!-- Modal Structure -->
+    <div id="forgotModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Forgot Password</h2>
+            <p>Please enter your email address to reset your password.</p>
+            <div class="form-group">
+                <input type="email" id="resetEmail" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <p id="msg3"></p>
+            </div>
+            <div class="form-group btn">
+                <button id="submitForgot">Submit</button>
+            </div>
+        </div>
+    </div>
+
 </body>
+<script src="js/all.js"></script>
+<script src="js/axios.js"></script>
+<script src="js/main.js"></script>
 </html>
