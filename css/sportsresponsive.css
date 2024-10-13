@@ -1,0 +1,194 @@
+/* phone */
+@media(max-width: 786px) {
+    body {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/field3.jpg');
+    }
+    nav .logo img {
+        width: 50px;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-right: 10%;
+    }
+
+    .hero .bigside-nav{
+        display: none;
+    }
+    
+    .navbar .fa-power-off {
+        display: none;
+    }
+
+    .side-nav .second{
+        margin-top: 280px;
+    }
+
+    .hero .content{
+        margin-top: 15%;
+        padding: 5px 5px;
+        margin-left: 1%;
+        width: 94%;
+    }
+    
+    .hero .content .one p{
+        font-size: 15px;
+        color: white;
+    }
+    .content .two{
+        margin-top: 15%;
+    }
+    .content .two p{
+        font-size: 13px;
+        color: white;
+    }
+    .content .two .twoinner{
+        padding-bottom: 20px;
+    }
+    .content .two .twoinner button{
+        width: 35%;
+        padding: 7px;
+    }
+    .content .two .twoinner button:hover,
+    .content .two .twoinner .active
+    {
+        border: 2px solid green;
+        background-color: transparent;
+        color: white;
+    }
+    .content .three{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .content .three .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+        background-color: green;
+        color: white;
+        cursor: pointer;
+    }
+    .content .three .row{
+        border: 1px solid green;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .content .three .row .r1 p{
+        font-size: 10px;
+    }
+    .content .three .row .r2 img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+    }
+    
+    footer {
+        display: flex;
+    }
+}
+
+
+/* tab */
+@media(min-width: 787px) and (max-width: 1024px) {
+    .cards {
+        justify-content: start;
+    }
+
+    .quick .one a {
+        color: white;
+        font-size: 15px;
+        background: linear-gradient(55deg, green, #f3f3);
+    }
+
+    .moving-text {
+        font-size: 19px;
+    }
+
+    /* profile */
+    .profile .one h1 {
+        width: 10%;
+        height: 65px;
+        padding: 10px;
+    }
+
+    /* login */
+    .accounts h1 {
+        font-size: 20px;
+    }
+
+    .accounts .login .two,
+    .accounts .register .two {
+        width: 90%;
+    }
+
+    .accounts label {
+        font-size: 18px;
+    }
+
+    .accounts .login .two button,
+    .accounts .register .two button {
+        padding: 10px;
+    }
+
+    .accounts .login .suggest p,
+    .accounts .register .suggest p {
+        font-size: 14px;
+    }
+
+    /* sports */
+    .menu-icon {
+        display: block;
+        margin-right: 7%;
+    }
+
+    .hero .bigside-nav{
+        display: none;
+    }
+    
+    .navbar .fa-power-off {
+        display: none;
+    }
+
+    .hero .content{
+        padding: 5px 5px;
+        margin-left: 1%;
+        width: 96%;
+        margin-top: 5%;
+    }
+
+    .content .two .twoinner{
+        padding-bottom: 20px;
+    }
+
+    .content .two .twoinner button{
+        width: 20%;
+    }
+}
+
+
+/* tab */
+@media(min-width: 1024px) and (max-width: 1300px) {
+    /* sports */
+    .menu-icon {
+        display: block;
+    }
+
+    .hero .bigside-nav{
+        display: none;
+    }
+    
+    .navbar .fa-power-off {
+        display: none;
+    }
+
+    .hero .content{
+        padding: 5px 5px;
+        margin-left: 1%;
+        width: 97%;
+    }
+}

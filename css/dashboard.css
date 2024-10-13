@@ -1,0 +1,975 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+nav .logo img {
+    width: 100px;
+}
+
+nav .end {
+    display: flex;
+    align-items: center;
+    gap: 1rem !important;
+}
+
+nav .end .lang {
+    list-style-type: none;
+}
+
+nav .end .lang li {
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav .end .lang .dropdown {
+    position: relative;
+}
+
+nav .end .lang .dropdown .dropdown-menu {
+    position: absolute;
+    min-width: 100px;
+    padding: 20px;
+    list-style-type: none;
+    left: -20px;
+    transition: 3s ease;
+    top: 25px;
+    background: green;
+    display: none;
+}
+
+.fa-power-off {
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    align-items: center;
+}
+
+.first .return {
+    display: none;
+}
+
+.first .account p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.first .account p .num {
+    font-size: 15px;
+    font-weight: lighter;
+    color: green;
+}
+
+.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.toggler {
+    display: flex;
+    justify-content: center;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 15px;
+    background-color: #f3f3;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-label .toggle-inner {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 0.3s ease;
+}
+
+.toggle-checkbox:checked+.toggle-label .toggle-inner {
+    left: 15px;
+}
+
+.toggle-checkbox:checked+.toggle-label {
+    background-color: #f3f3;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 4rem;
+    justify-content: center;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.cards .inner {
+    flex-shrink: 0;
+    width: 400px;
+    height: 150px;
+    padding: 10px;
+}
+
+.acct {
+    background: linear-gradient(55deg, green, #f3f3);
+    box-shadow: 2px 7px 2px #f3f3;
+    border-radius: 10px;
+    border: 1px solid green;
+}
+
+.acct .hide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-eye {
+    color: green;
+    cursor: pointer;
+}
+
+.acct .money {
+    margin-top: 5%;
+}
+
+.acct .money .p1 {
+    color: green;
+    font-size: 20px;
+    text-align: right;
+}
+
+.acct .money .p2 {
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.atm {
+    background: linear-gradient(95deg, #f3f3, #000);
+    box-shadow: 2px 7px 2px #f3f3;
+    border-radius: 10px;
+}
+
+.atm .one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.atm .one img {
+    width: 50px;
+}
+
+.fa-wifi {
+    color: #fff;
+}
+
+.atm .two {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid white;
+}
+
+.atm .two p {
+    letter-spacing: 6px;
+    color: transparent;
+    background-image: linear-gradient(to right, green, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.atm .three {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    color: white;
+    font-size: 10px;
+    margin-top: 2%;
+}
+
+.atm .four {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+    font-size: 15px;
+    margin-top: -2%;
+}
+
+.atm .four h3 {
+    text-align: right;
+}
+
+.atm .four .p1 {
+    color: transparent;
+    background-image: linear-gradient(to right, white, black, green);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.atm .four .debit {
+    font-size: 10px;
+}
+
+.quick {
+    padding: 10px;
+    margin-top: 2%;
+}
+
+.intro {
+    padding: 0px 2.5%;
+    margin-bottom: 5%;
+}
+
+.intro p {
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
+
+.quick .one {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.quick .one a {
+    border: 1px solid green;
+    box-shadow: 4px 4px 4px #f3f3;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    width: 30%;
+    text-decoration: none;
+    color: green;
+    font-size: 25px;
+}
+
+.dark-mode .quick .one a,
+.dark-mode .container,
+.dark-mode .acct .money .p1,
+.dark-mode .atm .four .p1 {
+    color: #fff;
+}
+
+.quick .one a div {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f3f3;
+    color: green;
+    margin-bottom: 5%;
+}
+
+.moving-text {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 24px;
+    animation: moveText 20s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: green;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+}
+
+
+/* transfers */
+.transfers {
+    border: 1px solid green;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 8px 8px #f3f3;
+    margin-bottom: 5%;
+}
+
+.transfers .intro {
+    margin-bottom: 2%;
+}
+
+.transfers .intro h1 {
+    font-size: 20px;
+}
+
+.transfers .intro p {
+    font-size: 15px;
+}
+
+.transfers .form {
+    margin-top: 3%;
+}
+
+.transfers .form-group {
+    margin: 15px;
+}
+
+.transfers .form input {
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid green;
+}
+
+.dark-mode .transfers .form input {
+    background: transparent;
+    color: white;
+}
+
+#msg {
+    color: red;
+    font-size: 13px;
+}
+
+.transfers .form button {
+    border: none;
+    width: 100%;
+    background-color: green;
+    color: white;
+    transition: 1s ease;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.transfers .form button:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid green;
+}
+
+
+
+/* qr code */
+.qr {
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.qr .one img {
+    border: 2px dotted green;
+    width: 80%;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.qr p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.qr button {
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+}
+
+
+
+/* cards */
+.mycard {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 20px;
+}
+
+.inner-card div {
+    margin-top: 2%;
+    border-bottom: 1px solid green;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.inner-card div p {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.inner-card div span {
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.light-mode .inner-card div span,
+.light-mode .inner-exe .b1,
+.light-mode .inner-exe .b2 {
+    color: black;
+}
+
+.mycard .inner-card {
+    margin-bottom: 5%;
+}
+
+.inner-exe {
+    display: flex;
+    gap: 1rem !important;
+}
+
+.inner-exe button {
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    transition: 3s;
+}
+
+.inner-exe .b1 {
+    background-color: transparent;
+    border-top: 2px solid green;
+}
+
+.inner-exe .b2 {
+    background-color: transparent;
+    border-bottom: 2px solid green;
+}
+
+
+
+
+
+/* history */
+.history {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding: 20px;
+}
+
+.history .one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.history input {
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid green;
+}
+
+.dark-mode .history input {
+    background: transparent;
+    color: white;
+}
+
+.history .two {
+    margin-top: 3%;
+}
+
+.history .two a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+.history .two .inner {
+    background-color: green;
+    box-shadow: 4px 4px 4px #f3f3;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 2s;
+}
+
+.history .two .inner:hover {
+    background-color: transparent;
+    border: 1px solid green;
+    color: black;
+}
+
+.history .two .inner:hover .amt {
+    color: black;
+}
+
+.dark-mode .history .two .inner {
+    border: 1px solid green;
+    padding: 15px;
+    background-color: transparent;
+}
+
+.dark-mode .history .two .inner:hover {
+    border: 1px solid green;
+    padding: 15px;
+    background-color: green;
+    color: white;
+}
+
+.dark-mode .history .two .inner:hover .amt {
+    color: white;
+}
+
+.history .two .inner .p1 {
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.history .two .inner .amt {
+    letter-spacing: 3px;
+    font-size: 15px;
+    color: white;
+}
+
+.history .two .inner .t2 {
+    display: flex;
+    justify-content: end;
+}
+
+
+
+/* profile */
+.profile {
+    border: 1px solid green;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 8px 8px #f3f3;
+    margin-bottom: 5%;
+}
+
+.profile .one h1 {
+    border: 1px solid green;
+    width: 5%;
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+.profile .form {
+    margin-top: 3%;
+}
+
+.profile .form-group {
+    margin: 15px;
+}
+
+.profile .form input {
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid green;
+}
+
+.dark-mode .profile .form input {
+    background: transparent;
+    color: white;
+}
+
+#msg {
+    color: red;
+    font-size: 10px;
+}
+
+.profile .form button {
+    border: none;
+    width: 100%;
+    background-color: green;
+    color: white;
+    transition: 1s ease;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.profile .two .t2 {
+    margin-top: 5%;
+}
+
+.profile .form button:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid green;
+}
+
+
+
+/* support */
+.support {
+    margin-bottom: 5%;
+    padding: 20px;
+}
+
+.support .one {
+    display: flex;
+    justify-content: center;
+}
+
+.support .one p {
+    font-size: 20px;
+}
+
+.support .two .t1 {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+.support .two p {
+    letter-spacing: 3px;
+}
+
+.support .two .t1 .topic,
+.support .two .t2 .topic {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-twitter,
+.fa-linkedin {
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
+/* history details */
+.hdetails {
+    margin-bottom: 5%;
+    padding: 20px;
+}
+
+.hdetails .one {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.hdetails .one img {
+    width: 100px;
+}
+
+.hdetails .one p {
+    font-size: 20px;
+}
+
+.hdetails .two div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.hdetails .two div .title {
+    color: green;
+    font-weight: bold;
+}
+
+.hdetails .three {
+    margin-top: 5%;
+}
+
+.hdetails .three button {
+    border: none;
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* error / success page design */
+.msgpage {
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.msgpage .one span {
+    font-size: 150px;
+}
+
+.msgpage p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.msgpage button,
+.msgpage a {
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+}
+
+
+
+/* login */
+.accounts {
+    margin-top: 2%;
+}
+
+.accounts .register {
+    display: none;
+}
+
+.accounts .login,
+.accounts .register {
+    padding: 20px;
+    transition: 3s;
+}
+
+.accounts .login .one,
+.accounts .register .one {
+    text-align: center;
+}
+
+.accounts .login .one p,
+.accounts .register .one p {
+    color: green;
+    font-weight: bold;
+}
+
+.accounts .login .two,
+.accounts .register .two {
+    background: linear-gradient(150deg, #f3f3, green, #f3f3);
+    padding: 20px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+.accounts .login .two .form-group,
+.accounts .register .two .form-group {
+    margin: 13px;
+}
+
+.accounts .login .two .form-group .pwd,
+.accounts .register .two .form-group .pwd {
+    display: flex;
+    align-items: center;
+}
+
+.accounts .login .two .form-group input,
+.accounts .register .two .form-group input {
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid green;
+    background: transparent;
+}
+
+.dark-mode .accounts .login .two input,
+.dark-mode .accounts .register .two input {
+    background: transparent;
+    color: white;
+}
+
+.accounts .login .forgot {
+    display: flex;
+    justify-content: end;
+}
+
+.accounts .login .forgot #forgot {
+    color: white;
+}
+
+#msg1,
+#msg2,
+#msg3 {
+    color: red;
+    font-size: 13px;
+}
+
+.accounts .login .two .btn,
+.accounts .register .two .btn {
+    margin-top: 10%;
+}
+
+.accounts .login .two button,
+.accounts .register .two button, 
+.modal-content #submitForgot{
+    border: none;
+    width: 100%;
+    background-color: green;
+    color: white;
+    transition: 1s ease;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.accounts .login .two button:hover,
+.accounts .register .two button:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid green;
+}
+
+.accounts .login .suggest,
+.accounts .register .suggest {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.accounts .login .suggest .s1,
+.accounts .register .suggest .s2 {
+    color: green;
+    cursor: pointer;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: black;
+    margin: auto;
+    margin-top: 15%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.modal-content .form-group{
+    margin: 10px;
+}
+.modal-content p{
+    color: green;
+}
+.modal-content .form-group input{
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border-bottom: 1px solid green;
+}
+.modal-content .btn{
+    margin-top: 5%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

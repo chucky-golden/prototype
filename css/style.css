@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar .navbar-logo img {
+    width: 100px;
+}
+
+.navbar .logout {
+    margin-right: 2%;
+}
+
+.navbar .fa-power-off {
+    color: white;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* mobile Side Navigation */
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+.side-nav ul{
+    list-style-type: none;
+}
+
+.side-nav ul li{
+    padding: 8px 8px 18px 12px;
+}
+
+.side-nav ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.hero{
+    display: flex;
+}
+
+/* laptop Side Navigation */
+.hero .bigside-nav{
+    background-color: #333;
+    width: 15%;
+    padding: 10px;
+    height: 100vh;
+    position: fixed;
+    top: 50px;
+}
+.hero .bigside-nav ul{
+    list-style: none;
+}
+.hero .bigside-nav ul .nav-item{
+    padding: 5px 5px 30px 5px;
+}
+.hero .bigside-nav .second,
+.side-nav .second{
+    margin-top: 290px;
+}
+.hero .bigside-nav .version{
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+.hero .bigside-nav ul .nav-item .nav-link,
+.side-nav ul li a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    width: 60%;
+    text-align: center;
+    background-color: green;
+    transition: 1s ease;
+}
+.hero .bigside-nav ul .nav-item .dash,
+.side-nav .dash{
+    animation: changeColor 5s linear infinite;
+}
+.hero .bigside-nav ul .nav-item .nav-link:hover{
+    border: 2px solid green;
+    background: transparent;
+    color: white;
+    width: 70%;
+}
+@keyframes changeColor {
+    0%, 100%{
+        background-color: green;
+        color: white;
+    }40%, 60%{
+        background-color: rgb(14, 240, 14);
+        color: black;
+    }20%, 90%{
+        background-color: rgb(90, 227, 21);
+        color: black;
+    }
+}
+
+.hero .content{
+    margin-top: 2%;
+    padding: 5px 20px;
+    margin-left: 16%;
+    width: 81%;
+}
+.content .one p{
+    font-size: 20px;
+}
+.content .one p .name{
+    font-weight: bold;
+    color: green;
+}
+.content .two{
+    margin-top: 5%;
+}
+.content .two p{
+    font-size: 18px;
+}
+.content .two .twoinner{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.content .two .twoinner button{
+    flex-shrink: 0;
+    border: none;
+    background-color: green;
+    padding: 15px;
+    display: inline-block;
+    width: 10%;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 1s ease;
+}
+.content .two .twoinner button:hover,
+.content .two .twoinner .active
+{
+    border: 1px solid green;
+    background-color: transparent;
+    color: black;
+}
+.content .three{
+    margin-top: 2%;
+}
+.content .three a{
+    margin: 10px;
+}
+.content .three .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transition: 3s ease;
+}
+.content .three .row{
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 10px;
+}
+.content .three .row .r2 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.content .three #club,
+.content .three #international,
+.content .three #national{
+    display: none;
+}
+
+footer {
+    display: none;
+    justify-content: space-around;
+    background-color: green;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+}
