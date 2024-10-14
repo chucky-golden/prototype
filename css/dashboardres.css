@@ -38,10 +38,79 @@
     .hero .content{
         font-size: 15px;
         color: white;
+        padding-bottom: 50px;
     }
     
     footer {
         display: flex;
+    }
+
+    /* business */
+    .content .add{
+        margin-bottom: 5%;
+    }
+    .content .add button{
+        padding: 10px;
+        font-size: 10px;
+    }
+    .content .row{
+        margin-top: 4%;
+    }
+    .content .row .r1{
+        width: 60%;
+    }
+    .content .row .r2,
+    .content .row .dr2{
+        width: 40%;
+    }
+    .content .row .details img{
+        width: 30px;
+        height: 30px;
+    }
+    .content .row .details p{
+        font-size: 10px;
+    }
+    .content .row .img img{
+        margin-top: 3%;
+    }
+    .content .row .img img{
+        width: 150px;
+        height: 150px;
+    }
+    .content .row .desc p{
+        letter-spacing: 1px;
+    }
+    .content .row .r2 div{
+        border: 1px solid green;
+        padding: 10px;
+        height: 150px;
+        text-wrap: wrap;
+        width: 100%;
+        box-shadow: none;
+    }
+    .content .row .r2 div p{
+        font-size: 10px;
+    }
+    .content .row .dr2{
+        margin-top: 4%;
+    }
+    .content .row .dr2 div{
+        height: 150px;
+        text-wrap: wrap;
+        width: 250%;
+        margin-top: 2%;
+    }
+    .content .row .dr2 div p{
+        font-size: 10px;
+    }
+
+    /* create business modal */
+    .busModal .modal-content h2{
+        font-size: 15px;
+    }
+    .busModal .modal-content #submitBusiness{
+        padding: 10px;
+        font-size: 10px;
     }
 }
 

@@ -151,6 +151,42 @@ function initializeListeners() {
         });
     }
 
+    // call up add business / date night modal
+    let busAdd = document.getElementById("busAdd");
+
+    if (busAdd) {
+        let modal = document.getElementById("businessModal");
+        let closeBtn = document.querySelector(".busclose");
+
+        // When the user clicks the "Forgot Password" link, open the modal
+        busAdd.addEventListener('click', function (event) {
+            event.preventDefault();
+            modal.style.display = "flex";
+        });
+
+        // When the user clicks on <span> (x), close the modal
+        closeBtn.addEventListener('click', function () {
+            modal.style.display = "none";
+        });
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.addEventListener('click', function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+    }
+
+    // flip date night contact & desc container
+    const r2Elements = document.querySelectorAll('.dr2');
+    if(r2Elements){
+        setInterval(() => {
+            r2Elements.forEach(r2Element => {
+                r2Element.classList.toggle('flip');
+            });
+        }, 5000);
+    }
+
 
     // Function to open side navigation    
     const menuIcon = document.getElementById("menu-icon");

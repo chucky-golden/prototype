@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banter - Business</title>
+    <title>Banter - Date Night</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dashboardres.css">
 </head>
@@ -60,42 +60,17 @@
                     <div class="r1">
                         <div class="details">
                             <img src="img/img9.png" alt="">
-                            <p>chucky cheese <br><span>software technology</span></p>
+                            <p>chucky cheese</p>
                         </div>
-                        <div class="img">
-                            <img src="img/coffee.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="r2">
-                        <div>
-                            <p><b>Phone:</b> <br><span>08162216532</span></p>
-                            <p><b>Email:</b> <br><span>chucky@gmail.com</span></p>
-                            <p><b>Location:</b> <br><span>57 okigwe road</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="desc">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus neque ex ad
-                        debitis culpa optio praesentium dolorum consequuntur, sapiente, eaque at quos autem odio
-                        aspernatur consequatur dolore iure. Sunt!</p>
-                </div>
-            </div>
-            <div class="business">
-                <div class="row">
-                    <div class="r1">
-                        <div class="details">
-                            <img src="img/img7.jpg" alt="">
-                            <p>chucky cheese <br><span>software technology</span></p>
-                        </div>
-                        <div class="img">
-                            <img src="img/sky.jpeg" alt="">
-                        </div>
-                    </div>
-                    <div class="r2">
-                        <div>
-                            <p><b>Phone:</b> <br><span>08162216532</span></p>
-                            <p><b>Email:</b> <br><span>chucky@gmail.com</span></p>
-                            <p><b>Location:</b> <br><span>57 okigwe road</span></p>
+                        <div class="dr2">
+                            <div class="img2">
+                                <img src="img/coffee.jpg" alt="">
+                            </div>
+                            <div class="contact">
+                                <p><b>Phone:</b> <br><span>08162216532</span></p>
+                                <p><b>Email:</b> <br><span>chucky@gmail.com</span></p>
+                                <p><b>Location:</b> <br><span>57 okigwe road</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -110,17 +85,17 @@
                     <div class="r1">
                         <div class="details">
                             <img src="img/img7.jpg" alt="">
-                            <p>chucky cheese <br><span>software technology</span></p>
+                            <p>chucky cheese</p>
                         </div>
-                        <div class="img">
-                            <img src="img/nature.jpeg" alt="">
-                        </div>
-                    </div>
-                    <div class="r2">
-                        <div>
-                            <p><b>Phone:</b> <br><span>08162216532</span></p>
-                            <p><b>Email:</b> <br><span>chucky@gmail.com</span></p>
-                            <p><b>Location:</b> <br><span>57 okigwe road</span></p>
+                        <div class="dr2">
+                            <div class="img2">
+                                <img src="img/sky.jpeg" alt="">
+                            </div>
+                            <div class="contact">
+                                <p><b>Phone:</b> <br><span>08162216532</span></p>
+                                <p><b>Email:</b> <br><span>chucky@gmail.com</span></p>
+                                <p><b>Location:</b> <br><span>57 okigwe road</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -130,38 +105,61 @@
                         aspernatur consequatur dolore iure. Sunt!</p>
                 </div>
             </div>
+            <div class="business">
+                <div class="row">
+                    <div class="r1">
+                        <div class="details">
+                            <img src="img/img9.png" alt="">
+                            <p>chucky cheese</p>
+                        </div>
+                        <div class="dr2">
+                            <div class="img2">
+                                <img src="img/nature.jpeg" alt="">
+                            </div>
+                            <div class="contact">
+                                <p><b>Phone:</b> <br><span>08162216532</span></p>
+                                <p><b>Email:</b> <br><span>chucky@gmail.com</span></p>
+                                <p><b>Location:</b> <br><span>57 okigwe road</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus neque ex ad
+                        debitis culpa optio praesentium dolorum consequuntur, sapiente, eaque at quos autem odio
+                        aspernatur consequatur dolore iure. Sunt!</p>
+                </div>
+            </div>
+            
 
 
             <!-- Modal Structure -->
             <div id="businessModal" class="busModal">
                 <div class="modal-content">
                     <span class="busclose">&times;</span>
-                    <h2>Create Business Post</h2>
+                    <h2>Create Post</h2>
                     <p>fill form below to create post.</p>
                     <div class="form-group">
-                        <input type="text" id="busType" placeholder="Enter business type">
+                        <input type="text" id="datePhone" placeholder="Enter phone number">
                     </div>
                     <div class="form-group">
-                        <input type="text" id="busPhone" placeholder="Enter business phone number">
+                        <input type="text" id="dateAddress" placeholder="Enter location">
                     </div>
                     <div class="form-group">
-                        <input type="text" id="busAddress" placeholder="Enter business location">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="busEmail" placeholder="Enter business email">
+                        <input type="text" id="dateEmail" placeholder="Enter email">
                     </div>
                     <div class="form-group">
                         <label for="">upload sample picture</label><br>
-                        <input type="file" id="busPic">
+                        <input type="file" id="datePic">
                     </div>
                     <div class="form-group">
-                        <textarea id="busDesc" placeholder="Enter business description" maxlength="217"></textarea>
+                        <textarea id="dateDesc" placeholder="Enter description" maxlength="217"></textarea>
                     </div>
                     <div class="form-group">
                         <p id="msg3"></p>
                     </div>
                     <div class="form-group btn">
-                        <button id="submitBusiness">Create Now</button>
+                        <button id="submitDate">Create Now</button>
                     </div>
                 </div>
             </div>
