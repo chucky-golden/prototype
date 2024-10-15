@@ -177,17 +177,6 @@ function initializeListeners() {
         });
     }
 
-    // flip date night contact & desc container
-    const r2Elements = document.querySelectorAll('.dr2');
-    if(r2Elements){
-        setInterval(() => {
-            r2Elements.forEach(r2Element => {
-                r2Element.classList.toggle('flip');
-            });
-        }, 5000);
-    }
-
-
     // Function to open side navigation    
     const menuIcon = document.getElementById("menu-icon");
     if(menuIcon){
