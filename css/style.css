@@ -92,11 +92,11 @@ body {
     list-style: none;
 }
 .hero .bigside-nav ul .nav-item{
-    padding: 5px 5px 30px 5px;
+    padding: 5px 5px 15px 5px;
 }
 .hero .bigside-nav .second,
 .side-nav .second{
-    margin-top: 290px;
+    margin-top: 240px;
 }
 .hero .bigside-nav .version{
     margin-top: 30px;
@@ -125,7 +125,7 @@ body {
     width: 70%;
 }
 .hero .content{
-    margin-top: 2%;
+    margin-top: 3%;
     padding: 5px 20px;
     margin-left: 16%;
     width: 81%;
@@ -133,7 +133,7 @@ body {
 .content .add{
     margin-top: 3%;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
 }
 .content .add button{
     border: none;
@@ -205,6 +205,8 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50px;
+    border: 2px solid white;
+    background-color: white;
 }
 
 .content .three #club,

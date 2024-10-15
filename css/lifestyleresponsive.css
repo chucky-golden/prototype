@@ -2,8 +2,6 @@
 @media(max-width: 786px) {
     body {
         background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/tv.png');
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     nav .logo img {
         width: 50px;

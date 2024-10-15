@@ -49,6 +49,9 @@
     .content .add{
         margin-bottom: 5%;
     }
+    .content .add p{
+        color: green;
+    }
     .content .add button{
         padding: 10px;
         font-size: 10px;
