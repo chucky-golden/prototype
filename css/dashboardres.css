@@ -115,6 +115,46 @@
         padding: 10px;
         font-size: 10px;
     }
+
+    /* voting */
+    .content .two{
+        margin-top: 10%;
+    }
+    .content .two p{
+        font-size: 13px;
+        color: white;
+    }
+    .content .two .twoinner{
+        margin-top: 5%;
+        padding-bottom: 20px;
+    }
+    .content .two .twoinner button{
+        width: 35%;
+        padding: 7px;
+    }
+    .content .two .twoinner button:hover,
+    .content .two .twoinner .active
+    {
+        border: 2px solid green;
+        background-color: transparent;
+        color: white;
+    }
+    .content .three .player{
+        margin-top: 10%;
+    }
+    .content .three .player .p1{
+        width: 60%;
+    }
+    .content .three .player .p2{
+        width: 40%;
+    }
+    .content .three .player img{
+        width: 100%;
+        height: 200px;
+    }
+    .content .three .player p{
+        font-size: 10px;
+    }
 }
 
 
