@@ -287,8 +287,8 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
     transition: transform 1s;
+    backface-visibility: hidden;
     background: #f3f3f3;
     padding: 10px;
 }

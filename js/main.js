@@ -272,4 +272,6 @@ function initializeListeners() {
     }
 }
 
-initializeListeners();
+window.addEventListener('load', function () {
+    initializeListeners();
+});

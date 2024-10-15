@@ -1,7 +1,7 @@
 /* phone */
 @media(max-width: 786px) {
     body {
-        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/field3.jpg');
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://res.cloudinary.com/dnhqlysgk/image/upload/v1728997694/prototype/field3_swmkvz.jpg');
     }
     nav .logo img {
         width: 50px;

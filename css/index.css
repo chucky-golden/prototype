@@ -277,38 +277,38 @@ body {
 
 @keyframes fade1 {
     0% {
-        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/net.jpg');
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://res.cloudinary.com/dnhqlysgk/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1728997724/prototype/net_kjzc6l.jpg');
         background-position-x: 30%;
     }
     40% {
-        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/politics.png');
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://res.cloudinary.com/dnhqlysgk/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1728997752/prototype/politics_j2vhds.png');
         background-position-x: 30%;
     }
     70% {
-        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/tv.png');
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://res.cloudinary.com/dnhqlysgk/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1728997751/prototype/tv_l6hd08.png');
         background-position-x: 30%;
     }
     100% {
-        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/life.jpg');
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://res.cloudinary.com/dnhqlysgk/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1728997720/prototype/life_ookoii.jpg');
         background-position-x: 30%;
     }
 }
 
 @keyframes fade2 {
     0% {
-        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/foot2.jpg');
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://res.cloudinary.com/dnhqlysgk/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1728997698/prototype/foot2_t6xeo3.jpg');
         background-position-x: 30%;
     }
     40% {
-        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/foot3.jpg');
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://res.cloudinary.com/dnhqlysgk/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1728997700/prototype/foot3_dbw6ph.jpg');
         background-position-x: 30%;
     }
     70% {
-        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/foot4.jpg');
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://res.cloudinary.com/dnhqlysgk/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1728997701/prototype/foot4_g6biws.jpg');
         background-position-x: 30%;
     }
     100% {
-        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/foot5.jpg');
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://res.cloudinary.com/dnhqlysgk/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1728997702/prototype/foot5_bzatfa.jpg');
         background-position-x: 30%;
     }
 }

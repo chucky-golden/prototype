@@ -1,7 +1,7 @@
 /* phone */
 @media(max-width: 786px) {
     body {
-        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/tv.png');
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://res.cloudinary.com/dnhqlysgk/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1728997751/prototype/tv_l6hd08.png');
     }
     nav .logo img {
         width: 50px;
