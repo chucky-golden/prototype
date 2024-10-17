@@ -24,7 +24,7 @@
             <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)"
                     onclick="movePage('lifestyle')">Dashboard</a></li>
             <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="movePage('date')">Date Night</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="movePage('business')">Business Ads</a></li>
+            <li class="nav-item"><a class="nav-link active" href="javascript:void(0)" onclick="movePage('business')">Business Ads</a></li>
         </ul>
         <ul class="navbar-links2 second">
             <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('sports')">Switch
@@ -40,7 +40,7 @@
             <ul class="bignavbar-links2">
                 <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)"
                         onclick="movePage('lifestyle')">Dashboard</a></li>
-                <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="movePage('date')">Date Night</a></li>
+                <li class="nav-item"><a class="nav-link active" href="javascript:void(0)" onclick="movePage('date')">Date Night</a></li>
                 <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="movePage('business')">Business Ads</a></li>
             </ul>
             <ul class="bignavbar-links2 second">
@@ -191,8 +191,18 @@
         </div>
     </footer>
 </body>
+<script>
+    // flip date night contact & desc container
+    const r2Elements = document.querySelectorAll('.dr2');
+    if(r2Elements){
+        setInterval(() => {
+            r2Elements.forEach(r2Element => {
+                r2Element.classList.toggle('flip');
+            });
+        }, 5000);
+    }
+</script>
 <script src="js/all.js"></script>
 <script src="js/axios.js"></script>
 <script src="js/main.js"></script>
-
 </html>

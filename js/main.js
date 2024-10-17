@@ -177,17 +177,6 @@ function initializeListeners() {
         });
     }
 
-    // flip date night contact & desc container
-    const r2Elements = document.querySelectorAll('.dr2');
-    if(r2Elements){
-        setInterval(() => {
-            r2Elements.forEach(r2Element => {
-                r2Element.classList.toggle('flip');
-            });
-        }, 5000);
-    }
-
-
     // Function to open side navigation    
     const menuIcon = document.getElementById("menu-icon");
     if(menuIcon){
@@ -214,7 +203,7 @@ function initializeListeners() {
 
 
 
-    // toggle light and dark mode
+    // show sports category
     const btn1 = document.getElementById("btn1");
     if (btn1) {
         const btn2 = document.getElementById("btn2");
@@ -268,6 +257,114 @@ function initializeListeners() {
             btn2.classList.remove('active')
             btn3.classList.remove('active')
             btn4.classList.add('active')
+        });
+    }
+
+
+    // show voting category
+    const vbtn1 = document.getElementById("vbtn1");
+    if (vbtn1) {
+        const vbtn2 = document.getElementById("vbtn2");
+        const vbtn3 = document.getElementById("vbtn3");
+        const vbtn4 = document.getElementById("vbtn4");
+        const vbtn5 = document.getElementById("vbtn5");
+        const vbtn6 = document.getElementById("vbtn6");
+
+        const nigeria = document.getElementById("nigeria");
+        const england = document.getElementById("england");
+        const spain = document.getElementById("spain");
+        const germany = document.getElementById("germany");
+        const france = document.getElementById("france");
+        const italy = document.getElementById("italy");
+
+        vbtn1.addEventListener("click", function () {
+            nigeria.style.display = 'block'
+            england.style.display = 'none'
+            spain.style.display = 'none'
+            germany.style.display = 'none'
+            france.style.display = 'none'
+            italy.style.display = 'none'
+            vbtn1.classList.add('active')
+            vbtn2.classList.remove('active')
+            vbtn3.classList.remove('active')
+            vbtn4.classList.remove('active')
+            vbtn5.classList.remove('active')
+            vbtn6.classList.remove('active')
+        });
+
+        vbtn2.addEventListener("click", function () {
+            nigeria.style.display = 'none'
+            england.style.display = 'block'
+            spain.style.display = 'none'
+            germany.style.display = 'none'
+            france.style.display = 'none'
+            italy.style.display = 'none'
+            vbtn1.classList.remove('active')
+            vbtn2.classList.add('active')
+            vbtn3.classList.remove('active')
+            vbtn4.classList.remove('active')
+            vbtn5.classList.remove('active')
+            vbtn6.classList.remove('active')
+        });
+
+        vbtn3.addEventListener("click", function () {
+            nigeria.style.display = 'none'
+            england.style.display = 'none'
+            spain.style.display = 'block'
+            germany.style.display = 'none'
+            france.style.display = 'none'
+            italy.style.display = 'none'
+            vbtn1.classList.remove('active')
+            vbtn2.classList.remove('active')
+            vbtn3.classList.add('active')
+            vbtn4.classList.remove('active')
+            vbtn5.classList.remove('active')
+            vbtn6.classList.remove('active')
+        });
+
+        vbtn4.addEventListener("click", function () {
+            nigeria.style.display = 'none'
+            england.style.display = 'none'
+            spain.style.display = 'none'
+            germany.style.display = 'block'
+            france.style.display = 'none'
+            italy.style.display = 'none'
+            vbtn1.classList.remove('active')
+            vbtn2.classList.remove('active')
+            vbtn3.classList.remove('active')
+            vbtn4.classList.add('active')
+            vbtn5.classList.remove('active')
+            vbtn6.classList.remove('active')
+        });
+
+        vbtn5.addEventListener("click", function () {
+            nigeria.style.display = 'none'
+            england.style.display = 'none'
+            spain.style.display = 'none'
+            germany.style.display = 'none'
+            france.style.display = 'block'
+            italy.style.display = 'none'
+            vbtn1.classList.remove('active')
+            vbtn2.classList.remove('active')
+            vbtn3.classList.remove('active')
+            vbtn4.classList.remove('active')
+            vbtn5.classList.add('active')
+            vbtn6.classList.remove('active')
+        });
+
+        vbtn6.addEventListener("click", function () {
+            nigeria.style.display = 'none'
+            england.style.display = 'none'
+            spain.style.display = 'none'
+            germany.style.display = 'none'
+            france.style.display = 'none'
+            italy.style.display = 'block'
+            vbtn1.classList.remove('active')
+            vbtn2.classList.remove('active')
+            vbtn3.classList.remove('active')
+            vbtn4.classList.remove('active')
+            vbtn5.classList.remove('active')
+            vbtn6.classList.add('active')
         });
     }
 }

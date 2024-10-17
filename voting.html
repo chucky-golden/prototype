@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banter - Vote</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboardres.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="navbar-logo" href="javascript:void(0)" onclick="movePage('sports')"><img src="https://res.cloudinary.com/dnhqlysgk/image/upload/v1728997731/prototype/trust_ddjrpi.png" alt=""></a>
+        <a class="logout" href=""><span class="fa fa-power-off"></span></a>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+    </nav>
+
+    <!-- Side Navigation (for mobile) -->
+    <div id="sideNav" class="side-nav">
+        <ul class="navbar-links2">
+            <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('sports')">Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="movePage('playground')">Play Ground</a></li>
+            <li class="nav-item"><a class="nav-link active" href="javascript:void(0)" onclick="movePage('voting')">Voting</a></li>
+        </ul>
+        <ul class="navbar-links2 second">
+            <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('lifestyle')">Switch App</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Logout</a></li>
+        </ul>
+        <span class="close-btn" id="close-btn">&times;</span>
+    </div>
+
+    <div class="hero">
+        <div id="bidSideNav" class="bigside-nav">
+            <ul class="bignavbar-links2">
+                <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('sports')">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="movePage('playground')">Play Ground</a></li>
+                <li class="nav-item"><a class="nav-link active" href="javascript:void(0)" onclick="movePage('voting')">Voting</a></li>
+            </ul>
+            <ul class="bignavbar-links2 second">
+                <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('lifestyle')">Switch App</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Logout</a></li>
+            </ul>
+            <p class="version">Banter Social App v.1.1</p>
+        </div>
+        <div class="content">
+            <div class="add">
+                <p><b>Player Of The Week</b></p>
+                <button id="busAdd"><span class="fa fa-plus"></span> Vote Now</button>
+            </div>
+            <div class="two">
+                <p>filter country</p>
+                <div class="twoinner">
+                    <button class="active" id="vbtn1">Nigeria</button>
+                    <button id="vbtn2">England</button>
+                    <button id="vbtn3">Spain</button>
+                    <button id="vbtn4">Germany</button>
+                    <button id="vbtn5">France</button>
+                    <button id="vbtn6">Italy</button>
+                </div>
+            </div>
+            <div class="three">
+                <div id="nigeria">
+                    <div class="player">
+                        <div class="p1">
+                            <img src="https://res.cloudinary.com/dnhqlysgk/image/upload/v1728997672/prototype/cld-sample_sbsi44.jpg" alt="">
+                        </div>
+                        <div class="p2">
+                            <p>Name: <span>Erling Haaland</span></p>
+                            <p>Club: <span>Manchester City</span></p>
+                            <p>Age: <span>24</span></p>
+                            <p>Country: <span>Norway</span></p>
+                            <p>Preferred Foot: <span>Left Foot</span></p>
+                            <p>Number Of Vote: <span>245</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="england">
+                    <div class="player">
+                        <div class="p1">
+                            <img src="https://res.cloudinary.com/dnhqlysgk/image/upload/v1728997672/prototype/cld-sample_sbsi44.jpg" alt="">
+                        </div>
+                        <div class="p2">
+                            <p>Name: <span>Bruno Fernandez</span></p>
+                            <p>Club: <span>Manchester City</span></p>
+                            <p>Age: <span>24</span></p>
+                            <p>Country: <span>Norway</span></p>
+                            <p>Preferred Foot: <span>Left Foot</span></p>
+                            <p>Number Of Vote: <span>245</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="spain">
+                    <div class="player">
+                        <div class="p1">
+                            <img src="https://res.cloudinary.com/dnhqlysgk/image/upload/v1728997672/prototype/cld-sample_sbsi44.jpg" alt="">
+                        </div>
+                        <div class="p2">
+                            <p>Name: <span>Bukayo Saka</span></p>
+                            <p>Club: <span>Manchester City</span></p>
+                            <p>Age: <span>24</span></p>
+                            <p>Country: <span>Norway</span></p>
+                            <p>Preferred Foot: <span>Left Foot</span></p>
+                            <p>Number Of Vote: <span>245</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="germany">
+                    <div class="player">
+                        <div class="p1">
+                            <img src="https://res.cloudinary.com/dnhqlysgk/image/upload/v1728997672/prototype/cld-sample_sbsi44.jpg" alt="">
+                        </div>
+                        <div class="p2">
+                            <p>Name: <span>Cole Palmer</span></p>
+                            <p>Club: <span>Manchester City</span></p>
+                            <p>Age: <span>24</span></p>
+                            <p>Country: <span>Norway</span></p>
+                            <p>Preferred Foot: <span>Left Foot</span></p>
+                            <p>Number Of Vote: <span>245</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="france">
+                    <div class="player">
+                        <div class="p1">
+                            <img src="https://res.cloudinary.com/dnhqlysgk/image/upload/v1728997672/prototype/cld-sample_sbsi44.jpg" alt="">
+                        </div>
+                        <div class="p2">
+                            <p>Name: <span>Mohammed Salah</span></p>
+                            <p>Club: <span>Manchester City</span></p>
+                            <p>Age: <span>24</span></p>
+                            <p>Country: <span>Norway</span></p>
+                            <p>Preferred Foot: <span>Left Foot</span></p>
+                            <p>Number Of Vote: <span>245</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="italy">
+                    <div class="player">
+                        <div class="p1">
+                            <img src="https://res.cloudinary.com/dnhqlysgk/image/upload/v1728997672/prototype/cld-sample_sbsi44.jpg" alt="">
+                        </div>
+                        <div class="p2">
+                            <p>Name: <span>James Maddison</span></p>
+                            <p>Club: <span>Manchester City</span></p>
+                            <p>Age: <span>24</span></p>
+                            <p>Country: <span>Norway</span></p>
+                            <p>Preferred Foot: <span>Left Foot</span></p>
+                            <p>Number Of Vote: <span>245</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <!-- Modal Structure -->
+            <div id="businessModal" class="busModal">
+                <div class="modal-content">
+                    <span class="busclose">&times;</span>
+                    <h2>Vote For Player Of The Week</h2>
+                    <p>select from list of vote player</p>
+                    <div class="form-group">
+                        <label for="">choose playing country</label><br>
+                        <select name="" id="country">
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="England">England</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Germany">Germany</option>
+                            <option value="France">France</option>
+                            <option value="Italy">Italy</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">choose player</label><br>
+                        <select name="" id="player">
+                            <option value="Halaand">Halaand</option>
+                            <option value="Bruno">Bruno</option>
+                            <option value="Saka">Saka</option>
+                            <option value="Palmer">Palmer</option>
+                            <option value="Salah">Salah</option>
+                            <option value="Maddison">Maddison</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p id="msg3"></p>
+                    </div>
+                    <div class="form-group btn">
+                        <button id="submitVote">Send Vote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <footer>
+        <div>
+            <a href="javascript:void(0)" onclick="movePage('sports')" title="home">
+                <span class="fa fa-home"></span>
+            </a>
+        </div>
+        <div>
+            <a href="javascript:void(0)" title="switch app">
+                <span class="fa fa-history"></span>
+            </a>
+        </div>
+        <div>
+            <a href="javascript:void(0)" title="profile">
+                <span class="fa fa-user"></span>
+            </a>
+        </div>
+        <div>
+            <a href="javascript:void(0)" title="subscription">
+                <span class="fa fa-credit-card"></span>
+            </a>
+        </div>
+    </footer>
+</body>
+<script src="js/all.js"></script>
+<script src="js/axios.js"></script>
+<script src="js/main.js"></script>
+</html>

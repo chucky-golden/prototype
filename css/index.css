@@ -173,7 +173,7 @@ body {
 
 .accounts .login .suggest .s1,
 .accounts .register .suggest .s2 {
-    color: white;
+    color: green;
     cursor: pointer;
 }
 

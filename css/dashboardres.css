@@ -52,6 +52,9 @@
     .content .add p{
         color: green;
     }
+    .content .add .bal{
+        font-size: 10px;
+     }
     .content .add button{
         padding: 10px;
         font-size: 10px;
@@ -106,6 +109,69 @@
     .content .row .dr2 div p{
         font-size: 10px;
     }
+    
+    /* fixtures */
+    .fixtures a{
+        padding: 5px;
+    }
+    .fixtures a .fix{
+        justify-content: center;
+        gap: 1rem;
+    }
+    .fixtures a .fix p{
+        font-size: 10px;
+        color: white;
+    }
+    .fixtures a .fix .fix1{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+    .fixtures a .fix .fix1 img,
+    .play .p1 img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+
+    /* details */
+    .play .p1{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    .play p{
+        font-size: 10px;
+        color: rgb(14, 240, 14);
+        font-weight: bold;
+    }
+    .play p .win{
+        font-size: 10px;
+    }
+    .users .user{
+        padding: 5px;
+    }
+    .users .user p{
+        font-size: 10px;
+        color: white;
+    }
+    .users .user div{
+        padding: 5px;
+    }
+    .users .user .u{
+        border: 1px solid white;
+    }
+    .users .user button{
+        background-color: green;
+        border: none;
+        padding: 10px;
+        color: white;
+        width: 90%;
+        cursor: pointer;
+    }
+
+
 
     /* create business modal */
     .busModal .modal-content h2{
@@ -113,6 +179,46 @@
     }
     .busModal .modal-content #submitBusiness{
         padding: 10px;
+        font-size: 10px;
+    }
+
+    /* voting */
+    .content .two{
+        margin-top: 10%;
+    }
+    .content .two p{
+        font-size: 13px;
+        color: white;
+    }
+    .content .two .twoinner{
+        margin-top: 5%;
+        padding-bottom: 20px;
+    }
+    .content .two .twoinner button{
+        width: 35%;
+        padding: 7px;
+    }
+    .content .two .twoinner button:hover,
+    .content .two .twoinner .active
+    {
+        border: 2px solid green;
+        background-color: transparent;
+        color: white;
+    }
+    .content .three .player{
+        margin-top: 10%;
+    }
+    .content .three .player .p1{
+        width: 60%;
+    }
+    .content .three .player .p2{
+        width: 40%;
+    }
+    .content .three .player img{
+        width: 100%;
+        height: 200px;
+    }
+    .content .three .player p{
         font-size: 10px;
     }
 }
