@@ -359,6 +359,12 @@ body {
     color: white;
     border-bottom: 1px solid green;
 }
+
+.busModal .modal-content .form-group input:focus,
+.busModal .modal-content .form-group textarea:focus{
+    background: transparent;
+}
+
 .busModal .modal-content .btn{
     margin-top: 5%;
 }

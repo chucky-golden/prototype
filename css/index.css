@@ -111,6 +111,10 @@ body {
     border-bottom: 1px solid green;
     background: transparent;
 }
+.accounts .login .two .form-group input:focus,
+.accounts .register .two .form-group input:focus {
+    background: transparent;
+}
 
 .dark-mode .accounts .login .two input,
 .dark-mode .accounts .register .two input {

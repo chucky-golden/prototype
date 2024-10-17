@@ -176,6 +176,7 @@
     /* sports */
     .menu-icon {
         display: block;
+        margin-right: 6%;
     }
 
     .hero .bigside-nav{
@@ -190,5 +191,10 @@
         padding: 5px 5px;
         margin-left: 1%;
         width: 97%;
+    }
+
+    .content .two .twoinner button{
+        width: 10%;
+        padding: 7px;
     }
 }
