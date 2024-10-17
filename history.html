@@ -1,95 +1,133 @@
-<html lang="en"></html>
+<!doctype html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transaction History</title>
-    <link rel="stylesheet" href="css/dashboard.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <title>Banter - Bet History</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboardres.css">
 </head>
-<body class="light-mode">
-    <nav>
-        <a href="" class="logo"><img src="https://res.cloudinary.com/dnhqlysgk/image/upload/v1728997731/prototype/trust_ddjrpi.png" alt=""></a>
-        <div class="end">
-            <ul class="lang">
-                <li class="dropdown" id="dropdown">Language <span class="fa fa-caret-down"></span>
-                    <ul class="dropdown-menu" id="dropdown-menu">
-                        <li>english</li>
-                    </ul>
-                </li>
-            </ul>
-            <a href=""><span class="fa fa-power-off"></span></a>
-        </div>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="navbar-logo" href="javascript:void(0)" onclick="movePage('sports')"><img src="https://res.cloudinary.com/dnhqlysgk/image/upload/v1728997731/prototype/trust_ddjrpi.png" alt=""></a>
+        <a class="logout" href=""><span class="fa fa-power-off"></span></a>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
     </nav>
-    <div class="first">
-        <div class="return">
-            <a href="dashboard.html"><span class="fa fa-arrow-left"></span></a>
-        </div>
-        <div class="account">
-            <p>chucky cheese<br><span class="num">0110211521</span></p>
-        </div>
-        <div class="toggler">
-            <input type="checkbox" id="toggle-mode" class="toggle-checkbox">
-            <label for="toggle-mode" class="toggle-label">
-                <span class="toggle-inner"></span>
-                <span class="toggle-switch"></span>
-            </label>
-        </div>
+
+    <!-- Side Navigation (for mobile) -->
+    <div id="sideNav" class="side-nav">
+        <ul class="navbar-links2">
+            <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('sports')">Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link active" href="javascript:void(0)" onclick="movePage('playground')">Play Ground</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="movePage('voting')">Voting</a></li>
+        </ul>
+        <ul class="navbar-links2 second">
+            <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('lifestyle')">Switch App</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Logout</a></li>
+        </ul>
+        <span class="close-btn" id="close-btn">&times;</span>
     </div>
-    
-    <div class="history">
-        <div class="one">
-            <p>Transaction History</p>
-            <input type="date" name="" id="date">
+
+    <div class="hero">
+        <div id="bidSideNav" class="bigside-nav">
+            <ul class="bignavbar-links2">
+                <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('sports')">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link active" href="javascript:void(0)" onclick="movePage('playground')">Play Ground</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="movePage('voting')">Voting</a></li>
+            </ul>
+            <ul class="bignavbar-links2 second">
+                <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('lifestyle')">Switch App</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Logout</a></li>
+            </ul>
+            <p class="version">Banter Social App v.1.1</p>
         </div>
-        <div class="two">
-            <a href="historydetails.html">
-                <div class="inner">
-                    <div class="t1">
-                        <p class="p1"><span>john doe</span><span>#in-453267588</span></p>
-                        <p class="amt">+ $4000</p>
+        <div class="content">
+            <div class="add">
+                <p><b>My history</b></p>
+                <button onclick="movePage('playdetails')">Back</button>
+            </div>
+            <div class="history">
+                <div class="hist">
+                    <div class="d1">
+                        <p class="p1">Match Played</p>
+                        <p class="p2"><span class="home">Manchester United</span> VS <span class="away">Arsenal</span></p>
+                        <p class="p1">Bet Against</p>
+                        <p class="p2">Gabby Jones</p>
+                        <p class="p1">Amount Staked</p>
+                        <p class="p2"><s>N</s>20000</p>
                     </div>
-                    <div class="t2">
-                        <p>23-09-2024</p>
-                    </div>
-                </div>
-            </a>
-            <a href="historydetails.html">
-                <div class="inner">
-                    <div class="t1">
-                        <p class="p1"><span>john doe</span><span>#lo-453267588</span></p>
-                        <p class="amt">+ $4000</p>
-                    </div>
-                    <div class="t2">
-                        <p>23-09-2024</p>
+                    <div class="d2">
+                        <p class="p1">Bet Status</p>
+                        <p class="p2">Active</p>
                     </div>
                 </div>
-            </a>
+                <div class="hist">
+                    <div class="d1">
+                        <p class="p1">Match Played</p>
+                        <p class="p2"><span class="home">Manchester United</span> VS <span class="away">Arsenal</span></p>
+                        <p class="p1">Bet Against</p>
+                        <p class="p2">Gabby Jones</p>
+                        <p class="p1">Amount Staked</p>
+                        <p class="p2"><s>N</s>20000</p>
+                    </div>
+                    <div class="d2">
+                        <p class="p1">Bet Status</p>
+                        <p class="p2">Active</p>
+                    </div>
+                </div>
+                <div class="hist">
+                    <div class="d1">
+                        <p class="p1">Match Played</p>
+                        <p class="p2"><span class="home">Manchester United</span> VS <span class="away">Arsenal</span></p>
+                        <p class="p1">Bet Against</p>
+                        <p class="p2">Gabby Jones</p>
+                        <p class="p1">Amount Staked</p>
+                        <p class="p2"><s>N</s>20000</p>
+                    </div>
+                    <div class="d2">
+                        <p class="p1">Bet Status</p>
+                        <p class="p2">Active</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+
+
+
+
+
+
     <footer>
         <div>
-            <a href="dashboard.html">
+            <a href="javascript:void(0)" onclick="movePage('sports')" title="home">
                 <span class="fa fa-home"></span>
             </a>
         </div>
         <div>
-            <a href="history.html">
+            <a href="javascript:void(0)" title="switch app">
                 <span class="fa fa-history"></span>
             </a>
         </div>
         <div>
-            <a href="profile.html">
+            <a href="javascript:void(0)" title="profile">
                 <span class="fa fa-user"></span>
             </a>
         </div>
         <div>
-            <a href="cards.html">
+            <a href="javascript:void(0)" title="subscription">
                 <span class="fa fa-credit-card"></span>
             </a>
         </div>
     </footer>
 </body>
 <script src="js/all.js"></script>
+<script src="js/axios.js"></script>
 <script src="js/main.js"></script>
 </html>

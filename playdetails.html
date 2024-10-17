@@ -47,6 +47,13 @@
             <p class="version">Banter Social App v.1.1</p>
         </div>
         <div class="content">
+            <div class="add">
+                <p><b>make a selection</b></p>
+                <button onclick="movePage('history')">History</button>
+            </div>
+            <div class="info">
+                <p>If you choose Home, then you are betting against and vice versa</p>
+            </div>
             <div class="play">
                 <div class="p1">
                     <p>Manchester United <br><span class="win">To Win</span></p>
@@ -111,7 +118,18 @@
                         <button id="awin">Place Bet</button>
                     </div>
                 </div>
-            </div>       
+            </div>   
+            
+            <!-- Modal Structure -->
+            <div id="playModal" class="playModal">
+                <div class="modal-content">
+                    <span class="playclose">&times;</span>
+                    <div class="sucess">
+                        <p><span class="fa fa-check"></span></p>
+                        <p class="bet">Bet Placed Successfully</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

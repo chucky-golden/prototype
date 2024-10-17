@@ -7,7 +7,7 @@ async function changePage( url ) {
 async function movePage(url) {
     try {
         url += '.html'
-        response = await changePage(url)
+        let response = await changePage(url)
 
         document.open()
         document.write(response.data)
@@ -163,6 +163,41 @@ function initializeListeners() {
             event.preventDefault();
             modal.style.display = "flex";
         });
+
+        // When the user clicks on <span> (x), close the modal
+        closeBtn.addEventListener('click', function () {
+            modal.style.display = "none";
+        });
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.addEventListener('click', function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+    }
+
+    // call up add business / date night modal
+    let awin = document.querySelectorAll("#awin");
+    
+    if (awin.length > 0) {
+        let hwin = document.querySelectorAll("#hwin");
+        let modal = document.getElementById("playModal");
+        let closeBtn = document.querySelector(".playclose");
+
+        awin.forEach((win) => {
+            win.addEventListener('click', function (event) {
+                event.preventDefault();
+                modal.style.display = "flex";
+            });
+        })
+
+        hwin.forEach((win) => {
+            win.addEventListener('click', function (event) {
+                event.preventDefault();
+                modal.style.display = "flex";
+            });
+        })
 
         // When the user clicks on <span> (x), close the modal
         closeBtn.addEventListener('click', function () {
