@@ -1,119 +1,108 @@
-<html lang="en"></html>
+<!doctype html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account Access</title>
-    <link rel="stylesheet" href="css/dashboard.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <title>Banter - Play Ground</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboardres.css">
 </head>
-<body class="light-mode">
-    <nav>
-        <a href="" class="logo"><img src="https://res.cloudinary.com/dnhqlysgk/image/upload/v1728997731/prototype/trust_ddjrpi.png" alt=""></a>
-        <div class="end">
-            <ul class="lang">
-                <li class="dropdown" id="dropdown">Language <span class="fa fa-caret-down"></span>
-                    <ul class="dropdown-menu" id="dropdown-menu">
-                        <li>english</li>
-                    </ul>
-                </li>
-            </ul>
-            <a href=""><span class="fa fa-power-off"></span></a>
-        </div>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="navbar-logo" href="javascript:void(0)" onclick="movePage('sports')"><img src="https://res.cloudinary.com/dnhqlysgk/image/upload/v1728997731/prototype/trust_ddjrpi.png" alt=""></a>
+        <a class="logout" href=""><span class="fa fa-power-off"></span></a>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
     </nav>
-    <div class="first">
-        <div class="return">
-            <a href="dashboard.html"><span class="fa fa-arrow-left"></span></a>
-        </div>
-        <div class="account">
-            <p>chucky cheese<br><span class="num">0110211521</span></p>
-        </div>
-        <div class="toggler">
-            <input type="checkbox" id="toggle-mode" class="toggle-checkbox">
-            <label for="toggle-mode" class="toggle-label">
-                <span class="toggle-inner"></span>
-                <span class="toggle-switch"></span>
-            </label>
-        </div>
+
+    <!-- Side Navigation (for mobile) -->
+    <div id="sideNav" class="side-nav">
+        <ul class="navbar-links2">
+            <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('sports')">Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link active" href="javascript:void(0)" onclick="movePage('playground')">Play Ground</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="movePage('voting')">Voting</a></li>
+        </ul>
+        <ul class="navbar-links2 second">
+            <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('lifestyle')">Switch App</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Logout</a></li>
+        </ul>
+        <span class="close-btn" id="close-btn">&times;</span>
     </div>
-    
-    <div class="profile">
-        <div class="one">
-            <h1>C</h1>
+
+    <div class="hero">
+        <div id="bidSideNav" class="bigside-nav">
+            <ul class="bignavbar-links2">
+                <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('sports')">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link active" href="javascript:void(0)" onclick="movePage('playground')">Play Ground</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="movePage('voting')">Voting</a></li>
+            </ul>
+            <ul class="bignavbar-links2 second">
+                <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('lifestyle')">Switch App</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Logout</a></li>
+            </ul>
+            <p class="version">Banter Social App v.1.1</p>
         </div>
-        <div class="two">
-            <div class="t1">
-                <p>profile details</p>
-            </div>
-            <div class="form">
-                <div class="form-group">
-                    <input type="text" id="email" value="chucky@gmail.com">
-                </div>
-                <div class="form-group">
-                    <input type="text" id="fname" value="Chucky">
-                </div>
-                <div class="form-group">
-                    <input type="text" id="mname" value="Zlatan">
-                </div>
-                <div class="form-group">
-                    <input type="text" id="lname" value="Cheese">
-                </div>
-                <div class="form-group">
-                    <input type="text" id="phone" value="080768546543">
-                </div>
-                <div class="form-group">
-                    <input type="text" id="nationality" placeholder="Nationality">
-                </div>
-                <div class="form-group">
-                    <span id="imsg"></span>
-                </div>
-                <div class="form-group">
-                    <button id="submitAccount">Edit Account</button>
-                </div>
+        <div class="content">
+            <div class="add">
+                <p>Deposit Bal: <span class="bal"><s>N</s>4000</span></p>
+                <button id="depoAdd"><span class="fa fa-plus"></span> Top Up</button>
             </div>
 
-            <div class="t2">
-                <p>edit password</p>
-            </div>
-            <div class="form">
+            
+        </div>
+
+
+
+        <!-- Modal Structure -->
+        <div id="depoModal" class="depoModal">
+            <div class="modal-content">
+                <span class="depoclose">&times;</span>
+                <h2>Top Up Deposit Balance</h2>
+                <p>enter amount to top up balance</p>
                 <div class="form-group">
-                    <input type="password" id="oldpwd" placeholder="Old Password">
+                    <label for="">choose playing country</label><br>
+                    <input type="number" name="" min="500" value="500" id="amt">
                 </div>
                 <div class="form-group">
-                    <input type="password" id="pwd" placeholder="New Password">
+                    <p id="msg3"></p>
                 </div>
-                <div class="form-group">
-                    <span id="imsg"></span>
-                </div>
-                <div class="form-group">
-                    <button id="submitPass">Edit Password</button>
+                <div class="form-group btn">
+                    <button id="submitDepo">Send Vote</button>
                 </div>
             </div>
         </div>
     </div>
+
+
 
     <footer>
         <div>
-            <a href="dashboard.html">
+            <a href="javascript:void(0)" onclick="movePage('category')" title="home">
                 <span class="fa fa-home"></span>
             </a>
         </div>
         <div>
-            <a href="history.html">
+            <a href="javascript:void(0)" onclick="movePage('lifestyle')" title="switch app">
                 <span class="fa fa-history"></span>
             </a>
         </div>
         <div>
-            <a href="profile.html">
+            <a href="javascript:void(0)" onclick="movePage('profile')" title="profile">
                 <span class="fa fa-user"></span>
             </a>
         </div>
         <div>
-            <a href="cards.html">
+            <a href="javascript:void(0)" onclick="movePage('subscription')" title="subscription">
                 <span class="fa fa-credit-card"></span>
             </a>
         </div>
     </footer>
 </body>
 <script src="js/all.js"></script>
+<script src="js/axios.js"></script>
 <script src="js/main.js"></script>
 </html>

@@ -495,6 +495,31 @@ body {
     color: white;
 }
 
+/* deposit modal */
+.depoModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.depoModal .modal-content {
+    background-color: black;
+    margin: auto;
+    margin-top: 12%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
 .busModal {
     display: none;
     position: fixed;
@@ -519,21 +544,26 @@ body {
     border-radius: 8px;
 }
 
-.busModal .modal-content .form-group{
+.busModal .modal-content .form-group,
+.depoModal .modal-content .form-group{
     margin: 10px;
 }
-.busModal .modal-content .form-group label{
+.busModal .modal-content .form-group label,
+.depoModal .modal-content .form-group label{
     color: white;
     font-size: 12px;
 }
-.busModal .modal-content h2{
+.busModal .modal-content h2,
+.depoModal .modal-content h2{
     color: white;
     font-size: 20px;
 }
+.depoModal .modal-content p,
 .busModal .modal-content p{
     color: green;
 }
 .busModal .modal-content .form-group input,
+.depoModal .modal-content .form-group input,
 .busModal .modal-content .form-group textarea,
 .modal-content .form-group select{
     outline: none;
@@ -555,7 +585,8 @@ body {
 }
 
 .busModal .busclose,
-.playModal .playclose {
+.playModal .playclose,
+.depoModal .depoclose {
     color: #aaa;
     float: right;
     font-size: 28px;
@@ -570,7 +601,8 @@ body {
     cursor: pointer;
 }
 .busModal .modal-content #submitBusiness,
-.busModal .modal-content #submitVote{
+.busModal .modal-content #submitVote,
+.depoModal .modal-content #submitDepo{
     border: none;
     width: 100%;
     background-color: green;
@@ -583,6 +615,7 @@ body {
 }
 
 .busModal .modal-content #submitBusiness:hover, 
+.depoModal .modal-content #submitDepo:hover,
 .busModal .modal-content #submitVote:hover {
     background-color: transparent;
     color: white;
@@ -629,6 +662,7 @@ body {
     height: 300px;
     border-radius: 10px;
     cursor: pointer;
+    transition: 2s ease;
 }
 .content .subs .sub div img{
     width: 50px;
@@ -680,6 +714,13 @@ body {
     color: green;
 }
 .content .subs .sub .sub2:hover{
+    background-color: white;
+    color: green;
+}
+.content .subs .sub .sub2:hover .price{
+    color: green;
+}
+.content .subs .sub .sub2:hover button{
     background-color: green;
     color: white;
 }

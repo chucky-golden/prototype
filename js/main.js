@@ -178,6 +178,32 @@ function initializeListeners() {
     }
 
     // call up add business / date night modal
+    let depoAdd = document.getElementById("depoAdd");
+
+    if (depoAdd) {
+        let modal = document.getElementById("depoModal");
+        let closeBtn = document.querySelector(".depoclose");
+
+        // When the user clicks the "Forgot Password" link, open the modal
+        depoAdd.addEventListener('click', function (event) {
+            event.preventDefault();
+            modal.style.display = "flex";
+        });
+
+        // When the user clicks on <span> (x), close the modal
+        closeBtn.addEventListener('click', function () {
+            modal.style.display = "none";
+        });
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.addEventListener('click', function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+    }
+
+    // call up add play bet modal
     let awin = document.querySelectorAll("#awin");
     
     if (awin.length > 0) {

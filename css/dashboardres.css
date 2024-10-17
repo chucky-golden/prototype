@@ -174,10 +174,14 @@
 
 
     /* create business modal */
-    .busModal .modal-content h2{
+    .busModal .modal-content h2,
+    .playModal .modal-content h2,
+    .depoModal .modal-content h2{
         font-size: 15px;
     }
-    .busModal .modal-content #submitBusiness{
+    .busModal .modal-content #submitBusiness,
+    .depoModal .modal-content #submitBusiness,
+    .playModal .modal-content #submitBusiness{
         padding: 10px;
         font-size: 10px;
     }
@@ -240,6 +244,35 @@
     }
     .content .history .d2{
         text-align: right;
+    }
+
+    /* subscription */
+    .content .subs{
+        padding: 5px;
+    }
+    .content .subs .sub{
+        margin-top: 10%;
+        gap: 1rem;
+    }
+    .content .subs .sub div{
+        padding: 5px;
+        width: 30%;
+        height: 195px;
+    }
+    .content .subs .sub div img{
+        width: 30px;
+        height: 30px;
+    }
+    .content .subs .sub div .plan{
+        font-size: 13px;
+        margin-top: 25%;
+    }
+    .content .subs .sub div .price{
+        color: green;
+        font-size: 12px;
+    }
+    .content .subs .sub div button{
+        padding: 5px;
     }
 }
 
