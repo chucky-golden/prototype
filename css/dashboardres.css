@@ -330,6 +330,13 @@
         width: 90%;
         padding: 10px;
     }
+    .content .others .ot1 .depo{
+        width: 90%;
+    }
+    .content .others .ot1 .depo .dhis{
+        font-size: 10px;
+        color: black;
+    }
     
     /* contact */
     .content .support{
