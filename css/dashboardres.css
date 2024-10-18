@@ -330,6 +330,24 @@
         width: 90%;
         padding: 10px;
     }
+    
+    /* contact */
+    .content .support{
+        margin-top: 10%;
+        justify-content: start;
+        gap: 2rem;
+        flex-direction: column;
+    }
+    .content .support .sup1,
+    .content .support .sup2{
+        width: 100%;
+    }
+    .content .support .sup2{
+        text-align: left;
+    }
+    .content .support button{
+        padding: 10px;
+    }
 }
 
 

@@ -863,7 +863,6 @@ body {
     border: 1px solid green;
     background: transparent;
 }
-.content .support button,
 .content .support button{
     border: none;
     width: 100%;
@@ -876,7 +875,6 @@ body {
     cursor: pointer;
 }
 
-.content .support button:hover,
 .content .support button:hover {
     background-color: transparent;
     color: black;
