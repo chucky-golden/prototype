@@ -47,12 +47,80 @@
             <p class="version">Banter Social App v.1.1</p>
         </div>
         <div class="content">
-            <div class="add">
-                <p>Deposit Bal: <span class="bal"><s>N</s>4000</span></p>
-                <button id="depoAdd"><span class="fa fa-plus"></span> Top Up</button>
+            <div class="profile">
+                <div class="p1">
+                    <p>C</p>
+                    <!-- <img src="https://res.cloudinary.com/dnhqlysgk/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1728997709/prototype/img7_ovbv6f.jpg" alt=""> -->
+                </div>
+                <div class="p2">
+                    <div class="intro">
+                        <p>Account Information <br><span class="i1">complete profile setup and purchase a subscription to stay verified</span></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label><br>
+                        <input type="text" readonly value="chucky@gmail.com" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Username</label><br>
+                        <input type="text" id="uname" value="chucky cheese" maxlength="20">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Full Name</label><br>
+                        <input type="text" id="fname" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Phone Number</label><br>
+                        <input type="text" id="phone" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Upload Profile Picture</label><br>
+                        <input type="file" id="file">
+                    </div>
+                    <div class="form-group btn">
+                        <button id="submit3">Edit Account</button>
+                    </div>
+                </div>
+
+                <div class="p3">
+                    <div class="intro">
+                        <p>Edit Account Password</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Enter Password</label><br>
+                        <input type="password" id="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Confirm Password</label><br>
+                        <input type="password" id="conpass">
+                    </div>
+                    <div class="form-group btn">
+                        <button id="submit4">Edit Password</button>
+                    </div>
+                </div>
             </div>
 
-            
+            <div class="others">
+                <div class="ot1">
+                    <p>Deposit Balance (<s>N</s>4000)</p>
+                    <button class="top" id="depoAdd">Top Up Balance</button>
+                </div>
+                <div class="ot1">
+                    <p>Check Different Subscription Plans For You</p>
+                    <button>Subscription Plans</button>
+                </div>
+                <div class="ot1">
+                    <p>Click Button Below To Contact Support</p>
+                    <button class="con">Contact Support</button>
+                </div>
+                <div class="ot1">
+                    <p>Click Button Below To Delete Account</p>
+                    <button class="del">Delete Account</button>
+                </div>
+                <div class="ot1">
+                    <p>Click Button Below To Logout Of Account</p>
+                    <button class="log">Logout Now</button>
+                </div>
+            </div>
         </div>
 
 
@@ -91,7 +159,7 @@
             </a>
         </div>
         <div>
-            <a href="javascript:void(0)" onclick="movePage('profile')" title="profile">
+            <a href="javascript:void(0)" class="active" onclick="movePage('profile')" title="profile">
                 <span class="fa fa-user"></span>
             </a>
         </div>

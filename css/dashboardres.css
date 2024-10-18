@@ -274,6 +274,62 @@
     .content .subs .sub div button{
         padding: 5px;
     }
+
+    /* profile */
+    .content .profile .p2 .intro,
+    .content .profile .p3 .intro{
+        margin-bottom: 10%;
+    }
+    .content .profile .p1 p{
+        border: 1px solid white;
+        padding: 20px;
+        background-color: green;
+        color: white;
+        width: 25px;
+        font-size: 20px;
+        border-radius: 50px;
+    }
+    .content .profile .p1 img{
+        width: 70px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid white;
+    }
+
+    .content .profile .p2 .intro p,
+    .content .profile .p3 .intro p{
+        font-size: 15px;
+    }
+    .content .profile .p2 .intro p .i1{
+        font-size: 12px;
+        font-weight: lighter;
+    }
+    .content .profile .p2 button,
+    .content .profile .p3 button{
+        padding: 10px;
+    }
+
+    .content .profile .p2 button:hover,
+    .content .profile .p3 button:hover {
+        color: white;
+    }
+    .content .profile .p3 {
+        margin-top: 15%;
+    }
+    .content .others{
+        margin-top: 10%;
+    }
+    .content .others .ot1{
+        margin-bottom: 7%;
+    }
+    .content .others .ot1 p{
+        font-size: 12px;
+    }
+    .content .others .ot1 button{
+        width: 90%;
+        padding: 10px;
+    }
 }
 
 
