@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000;
+}
+
+nav {
+    display: flex;
+    padding: 0 20px 0 20px;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(14, 240, 14);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav #back {
+    cursor: pointer;
+}
+
+nav div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+nav .p1 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav div img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+
+.mychats {
+    padding: 10px;
+}
+
+.mychats .row .d1 {
+    color: white;
+    display: flex;
+    justify-content: start;
+    gap: .5rem;
+    padding: 10px;
+}
+
+.mychats .row .d2 {
+    justify-content: end;
+}
+
+.mychats .row .d1 img {
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.mychats .row .d1 p {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    width: 80%;
+    border-radius: 0 20px 0 20px;
+}
+
+.mychats .row .d2 p {
+    background-color: rgb(14, 240, 14);
+    padding: 10px;
+    width: 80%;
+    color: black;
+    border-radius: 20px 0 20px 0;
+}
+
+.mychats .row .d1 p .name {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* phone */
+@media(max-width: 786px) {
+    nav .p1 {
+        display: none;
+    }
+
+    .mychats,
+    .mychats .row .d1 {
+        padding: 5px;
+    }
+
+    .mychats .row .d1 img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .mychats .row .d1 p {
+        font-size: 10px;
+    }
+}
+
+
+/* tab */
+@media(min-width: 787px) and (max-width: 1024px) {}
+
+
+/* tab */
+@media(min-width: 1025px) and (max-width: 1300px) {}
