@@ -8,10 +8,10 @@ body {
 nav {
     display: flex;
     padding: 0 20px 0 20px;
-    color: black;
+    color: white;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(14, 240, 14);
+    background-color: green;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -41,6 +41,27 @@ nav div img {
 
 .mychats {
     padding: 10px;
+}
+
+.mychats .chat-container{
+    height: 85vh;
+    overflow-y: auto;
+    transform: rotate(180deg);
+}
+.mychats .chat{
+    transform: rotate(180deg);
+}
+
+/* hide scrollbar of overflow */
+.mychats .chat-container::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+/* hide scrollbar of overflow two */
+.mychats .chat-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .mychats .row .d1 {
@@ -83,13 +104,43 @@ nav div img {
     display: flex;
     justify-content: space-between;
 }
-
+.sendmsg{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 1;
+    background-color: green;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.sendmsg textarea{
+    width: 93vw;
+    outline: none;
+    font-weight: 800;
+}
+.sendmsg .fa-paper-plane{
+    filter: grayscale(100%);
+}
+.sendmsg textarea:focus{
+    outline: none;
+}
+#emojiPickerContainer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+#emoji, #send{ cursor: pointer; }
 
 
 
 
 /* phone */
-@media(max-width: 786px) {
+@media(max-width: 486px) {
     nav .p1 {
         display: none;
     }
@@ -105,14 +156,61 @@ nav div img {
     }
 
     .mychats .row .d1 p {
-        font-size: 10px;
+        font-size: 12px;
+    }
+    .sendmsg{
+        gap: .5rem;
+    }
+    .sendmsg textarea{
+        width: 79vw;
+        outline: none;
+        font-weight: 800;
+    }
+}
+
+@media(min-width: 487px) and (max-width: 658px) {
+    nav .p1 {
+        display: none;
+    }
+
+    .mychats,
+    .mychats .row .d1 {
+        padding: 5px;
+    }
+
+    .mychats .row .d1 img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .mychats .row .d1 p {
+        font-size: 12px;
+    }
+    .sendmsg{
+        gap: .5rem;
+    }
+    .sendmsg textarea{
+        width: 85vw;
+        outline: none;
+        font-weight: 800;
+    }
+}
+
+/* tab */
+@media(min-width: 659px) and (max-width: 1024px) {
+    .sendmsg textarea{
+        width: 87vw;
+        outline: none;
+        font-weight: 800;
     }
 }
 
 
 /* tab */
-@media(min-width: 787px) and (max-width: 1024px) {}
-
-
-/* tab */
-@media(min-width: 1025px) and (max-width: 1300px) {}
+@media(min-width: 1025px) and (max-width: 1300px) {
+    .sendmsg textarea{
+        width: 89vw;
+        outline: none;
+        font-weight: 800;
+    }
+}

@@ -45,6 +45,28 @@ function initializeListeners() {
             window.history.back();
         });
     }
+
+    const emojiButton = document.getElementById('emoji');
+    const emojiPickerContainer = document.getElementById('emojiPickerContainer');
+    const messageBox = document.getElementById('msg');
+
+    const emojiPicker = document.createElement('emoji-picker');
+    emojiPickerContainer.appendChild(emojiPicker);
+
+    emojiButton.addEventListener('click', () => {
+        emojiPickerContainer.style.display = emojiPickerContainer.style.display === 'none' ? 'block' : 'none';
+    });
+
+    emojiPicker.addEventListener('emoji-click', (event) => {
+        const emoji = event.detail.unicode;
+        messageBox.value += emoji;
+    });
+
+    document.addEventListener('click', (event) => {
+        if (!emojiPickerContainer.contains(event.target) && !emojiButton.contains(event.target)) {
+            emojiPickerContainer.style.display = 'none';
+        }
+    });
 }
 
 window.addEventListener('load', function () {
