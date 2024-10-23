@@ -44,7 +44,7 @@ nav div img {
 }
 
 .mychats .chat-container{
-    height: 85vh;
+    height: 83vh;
     overflow-y: auto;
     transform: rotate(180deg);
 }
