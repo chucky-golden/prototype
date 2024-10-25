@@ -49,12 +49,15 @@ function initializeListeners() {
     const emojiButton = document.getElementById('emoji');
     const emojiPickerContainer = document.getElementById('emojiPickerContainer');
     const messageBox = document.getElementById('msg');
+    const sendMessageContainer = document.querySelector('.sendmsg');
 
     const emojiPicker = document.createElement('emoji-picker');
     emojiPickerContainer.appendChild(emojiPicker);
 
     emojiButton.addEventListener('click', () => {
-        emojiPickerContainer.style.display = emojiPickerContainer.style.display === 'none' ? 'block' : 'none';
+        const isPickerVisible = emojiPickerContainer.style.display === 'block';
+        emojiPickerContainer.style.display = isPickerVisible ? 'none' : 'block';
+        sendMessageContainer.classList.toggle('emoji-active', !isPickerVisible);
     });
 
     emojiPicker.addEventListener('emoji-click', (event) => {
@@ -65,8 +68,10 @@ function initializeListeners() {
     document.addEventListener('click', (event) => {
         if (!emojiPickerContainer.contains(event.target) && !emojiButton.contains(event.target)) {
             emojiPickerContainer.style.display = 'none';
+            sendMessageContainer.classList.remove('emoji-active');
         }
     });
+
 }
 
 window.addEventListener('load', function () {
