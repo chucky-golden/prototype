@@ -114,10 +114,10 @@ nav div img {
     color: white;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2.4rem;
 }
 .sendmsg textarea{
-    width: 93vw;
+    width: 89vw;
     outline: none;
     font-weight: 800;
 }
@@ -138,7 +138,7 @@ nav div img {
 emoji-picker section.search-row {
     display: none !important;
 }
-#emoji, #send{ cursor: pointer; }
+#emoji, #send, #mic-button{ cursor: pointer; }
 
 
 
@@ -163,10 +163,10 @@ emoji-picker section.search-row {
         font-size: 12px;
     }
     .sendmsg{
-        gap: .5rem;
+        gap: .8rem;
     }
     .sendmsg textarea{
-        width: 79vw;
+        width: 70vw;
         outline: none;
         font-weight: 800;
     }
@@ -204,10 +204,10 @@ emoji-picker section.search-row {
         font-size: 12px;
     }
     .sendmsg{
-        gap: .5rem;
+        gap: 1rem;
     }
     .sendmsg textarea{
-        width: 85vw;
+        width: 78vw;
         outline: none;
         font-weight: 800;
     }
@@ -228,8 +228,11 @@ emoji-picker section.search-row {
 
 /* tab */
 @media(min-width: 659px) and (max-width: 1024px) {
+    .sendmsg{
+        gap: 1.3rem;
+    }
     .sendmsg textarea{
-        width: 87vw;
+        width: 80vw;
         outline: none;
         font-weight: 800;
     }
@@ -251,6 +254,21 @@ emoji-picker section.search-row {
 
 /* tab */
 @media(min-width: 1025px) and (max-width: 1300px) {
+    .sendmsg{
+        gap: 1rem;
+    }
+    .sendmsg textarea{
+        width: 89vw;
+        outline: none;
+        font-weight: 800;
+    }
+}
+
+/* tab */
+@media(min-width: 1301px) and (max-width: 1500px) {
+    .sendmsg{
+        gap: 1.4rem;
+    }
     .sendmsg textarea{
         width: 89vw;
         outline: none;
