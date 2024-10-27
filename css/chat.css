@@ -114,7 +114,7 @@ nav div img {
     color: white;
     display: flex;
     align-items: center;
-    gap: 2.4rem;
+    gap: 2rem;
 }
 .sendmsg textarea{
     width: 89vw;
@@ -140,6 +140,42 @@ emoji-picker section.search-row {
 }
 #emoji, #send, #mic-button{ cursor: pointer; }
 
+#mic-button{
+    font-size: 20px;
+}
+
+#mic-button.active{ 
+    animation: zoom 2s ease-in-out infinite;
+}
+/* Notification styles */
+#recording-notification {
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #ff4b4b;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#recording-notification.active {
+    display: block;
+    opacity: 1;
+}
+
+@keyframes zoom {
+    0%, 100%{
+        transform: scale(1.5);
+    }50%, 60%{
+        transform: scale(1.1);
+    }
+}
 
 
 
@@ -166,7 +202,7 @@ emoji-picker section.search-row {
         gap: .8rem;
     }
     .sendmsg textarea{
-        width: 70vw;
+        width: 68vw;
         outline: none;
         font-weight: 800;
     }
@@ -182,6 +218,9 @@ emoji-picker section.search-row {
     }
     .sendmsg.emoji-active {
         bottom: 200px;
+    }
+    #recording-notification {
+        font-size: 15px;
     }
 }
 
@@ -207,7 +246,7 @@ emoji-picker section.search-row {
         gap: 1rem;
     }
     .sendmsg textarea{
-        width: 78vw;
+        width: 75vw;
         outline: none;
         font-weight: 800;
     }
@@ -223,6 +262,9 @@ emoji-picker section.search-row {
     }
     .sendmsg.emoji-active {
         bottom: 200px;
+    }
+    #recording-notification {
+        font-size: 15px;
     }
 }
 
@@ -248,6 +290,9 @@ emoji-picker section.search-row {
     }
     .sendmsg.emoji-active {
         bottom: 250px;
+    }
+    #recording-notification {
+        font-size: 15px;
     }
 }
 

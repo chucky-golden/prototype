@@ -86,8 +86,7 @@ function initializeListeners() {
 
     // Microphone recording setup
     const micButton = document.getElementById('mic-button');
-    micButton.addEventListener('mousedown', startRecording);
-    micButton.addEventListener('mouseup', stopRecording);
+    micButton.addEventListener('click', toggleRecording);
 
 }
 
@@ -96,7 +95,19 @@ let mediaRecorder;
 let audioChunks = [];
 let isRecording = false;
 const micButton = document.getElementById('mic-button');
+let startTime;
+let timerInterval;
+const recordingNotification = document.getElementById('recording-notification');
 
+
+// Toggle recording function
+async function toggleRecording() {
+    if (isRecording) {
+        stopRecording();
+    } else {
+        await startRecording();
+    }
+}
 
 // Function to start recording
 async function startRecording() {
@@ -119,7 +130,11 @@ async function startRecording() {
 
         // Update recording status
         isRecording = true;
+        
         micButton.style.color = 'black'
+        micButton.classList.toggle('active');
+        startTimer();
+
         console.log('Recording started');
 
         // Automatically stop after 1 minute if not stopped by user
@@ -140,6 +155,8 @@ async function stopRecording() {
         mediaRecorder.stop();
         console.log('Recording stopped');
         micButton.style.color = 'white'
+        micButton.classList.toggle('active');
+        stopTimer();
 
         isRecording = false;
 
@@ -165,6 +182,28 @@ async function stopRecording() {
             }
         };
     }
+}
+
+// Function to start the recording timer
+function startTimer() {
+    startTime = Date.now();
+    recordingNotification.classList.add('active');
+    timerInterval = setInterval(() => {
+        const elapsedTime = Date.now() - startTime;
+        const seconds = Math.floor(elapsedTime / 1000) % 60;
+        const minutes = Math.floor(elapsedTime / 60000);
+        recordingNotification.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    }, 1000);
+}
+
+// Function to stop the recording timer
+function stopTimer() {
+    clearInterval(timerInterval);
+    recordingNotification.classList.remove('active');
+    recordingNotification.style.opacity = '0';
+    setTimeout(() => {
+        recordingNotification.textContent = '00:00'; // Reset the timer display
+    }, 500); // Allow time for fade-out transition
 }
 
 // Save the recording to a local folder (works in server environments)
