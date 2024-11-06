@@ -199,7 +199,7 @@ emoji-picker section.search-row {
         font-size: 12px;
     }
     .sendmsg{
-        gap: .8rem;
+        gap: 1rem;
     }
     .sendmsg textarea{
         width: 68vw;
