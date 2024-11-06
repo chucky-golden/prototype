@@ -26,7 +26,7 @@
         </ul>
         <ul class="navbar-links2 second">
             <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('lifestyle')">Switch App</a></li>
-            <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" onclick="movePage('profile')" href="javascript:void(0)">Profile</a></li>
             <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Logout</a></li>
         </ul>
         <span class="close-btn" id="close-btn">&times;</span>
@@ -41,7 +41,7 @@
             </ul>
             <ul class="bignavbar-links2 second">
                 <li class="nav-item"><a class="nav-link dash" href="javascript:void(0)" onclick="movePage('lifestyle')">Switch App</a></li>
-                <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" onclick="movePage('profile')" href="javascript:void(0)">Profile</a></li>
                 <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Logout</a></li>
             </ul>
             <p class="version">Banter Social App v.1.1</p>
@@ -106,11 +106,11 @@
                 </div>
                 <div class="ot1">
                     <p>Check Different Subscription Plans For You</p>
-                    <button>Subscription Plans</button>
+                    <button onclick="movePage('subscription')">Subscription Plans</button>
                 </div>
                 <div class="ot1">
                     <p>Click Button Below To Contact Support</p>
-                    <button class="con">Contact Support</button>
+                    <button class="con" onclick="movePage('contact')">Contact Support</button>
                 </div>
                 <div class="ot1">
                     <p>Click Button Below To Delete Account</p>
@@ -139,7 +139,7 @@
                     <p id="msg3"></p>
                 </div>
                 <div class="form-group btn">
-                    <button id="submitDepo">Send Vote</button>
+                    <button id="submitDepo">Deposit Now</button>
                 </div>
             </div>
         </div>
