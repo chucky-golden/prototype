@@ -180,6 +180,17 @@ emoji-picker section.search-row {
 
 
 /* phone */
+@media(max-width: 416px) {
+    .sendmsg{
+        gap: 1rem;
+    }
+    .sendmsg textarea{
+        width: 69vw;
+        outline: none;
+        font-weight: 800;
+    }
+}
+
 @media(max-width: 486px) {
     nav .p1 {
         display: none;
@@ -202,7 +213,7 @@ emoji-picker section.search-row {
         gap: 1rem;
     }
     .sendmsg textarea{
-        width: 68vw;
+        width: 69vw;
         outline: none;
         font-weight: 800;
     }
