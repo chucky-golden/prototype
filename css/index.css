@@ -5,6 +5,10 @@ body {
     background: #000;
 }
 
+input.filled {
+    background-color: transparent;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -99,6 +103,7 @@ body {
 .accounts .register .two .form-group .pwd {
     display: flex;
     align-items: center;
+    gap: .5rem;
 }
 
 .accounts .login .two .form-group input,

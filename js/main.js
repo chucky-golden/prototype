@@ -35,8 +35,7 @@ window.addEventListener("popstate", async function() {
 
     initializeListeners()
 } );
-
-
+    
 function initializeListeners() {
     // toggle light and dark mode
     // const toggleSwitch = document.getElementById("toggle-mode");
@@ -118,9 +117,9 @@ function initializeListeners() {
     let show2 = document.getElementById('show2')
     if (show2) {
         show2.addEventListener('click', () => {
-            let rpasswordType = document.getElementById('rpassword').getAttribute('type')
-            let type = rpasswordType == 'text' ? 'password' : 'text'
-            document.getElementById('rpassword').setAttribute('type', type)
+            let cpasswordType = document.getElementById('cpassword').getAttribute('type')
+            let type = cpasswordType == 'text' ? 'password' : 'text'
+            document.getElementById('cpassword').setAttribute('type', type)
         })
     }
 
